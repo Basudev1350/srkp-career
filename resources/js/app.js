@@ -10,6 +10,7 @@
  import routes from './routes';
  import Vue from "vue";
 
+
  Vue.use(VueRouter);
 /**
  * The following block of code may be used to automatically register your
@@ -37,6 +38,6 @@ function newFunction() {
         router: new VueRouter(routes)
     });
 
-    
+   
 
 }

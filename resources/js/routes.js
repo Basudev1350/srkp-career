@@ -1,4 +1,5 @@
-import userDashboard from './components/user/userDashboard';
+import userDashboard from './components/user/userDashboard'
+
 export default{   
     mode: 'history',
     linkActiveClass: 'font-semibold',

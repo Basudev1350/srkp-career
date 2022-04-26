@@ -1912,26 +1912,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-// import Sidebar from './layout/sidebar.vue'
-// import TopNavigation from './layout/topNavigation.vue'
-// import BtmFooter from './layout/footer.vue'
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  //   components:{
-  //     'sidebar':Sidebar,
-  //     'top-navigation':TopNavigation,
-  //     'btm-footer':BtmFooter
-  //   },
-  data: function data() {
-    return {
-      message: 'Some Message'
-    };
-  },
-  methods: {
-    logout: function logout() {
-      axios.post('logout').then(function () {
-        document.location.href = "/login";
-      });
-    }
+  mounted: function mounted() {
+    console.log('Component mounted.');
   }
 });
 
@@ -37523,9 +37518,30 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("h1", [_vm._v("hello")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row justify-content-center" }, [
+        _c("div", { staticClass: "col-md-8" }, [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "card-header" }, [
+              _vm._v("Example Component"),
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _vm._v("\n                   hello world !!!\n                "),
+            ]),
+          ]),
+        ]),
+      ]),
+    ])
+  },
+]
 render._withStripped = true
 
 

@@ -1,30 +1,23 @@
 <template>
-<h1>hello</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">Example Component</div>
+
+                    <div class="card-body">
+                       hello world !!!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-// import Sidebar from './layout/sidebar.vue'
-// import TopNavigation from './layout/topNavigation.vue'
-// import BtmFooter from './layout/footer.vue'
-export default {
-//   components:{
-//     'sidebar':Sidebar,
-//     'top-navigation':TopNavigation,
-//     'btm-footer':BtmFooter
-//   },
-  data(){
-    return {
-      message: 'Some Message'
-    };
-  },
-  methods:{
-    logout()
-    {
-      axios.post('logout').then(function()
-      {
-        document.location.href = "/login";
-      })
-    },
-  },
-}
+    export default {
+        mounted() {
+            console.log('Component mounted.')
+        }
+    }
 </script>
